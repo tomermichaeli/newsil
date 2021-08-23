@@ -21,6 +21,8 @@ sections:
   path: content/data/info.json
   label: Info Page
 - type: heading
+  label: Heading
+- type: heading
   label: General Config
 - type: document
   path: config.json
