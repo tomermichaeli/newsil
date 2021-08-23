@@ -1,0 +1,25 @@
+.latest {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+
+
+  .item {
+
+  }
+
+  .title {
+
+  }
+
+  .hero {
+    height: 20vh;
+    overflow: hidden;
+  }
+
+  img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    min-height: 100%;
+  }
+}

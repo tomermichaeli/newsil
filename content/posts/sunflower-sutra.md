@@ -1,6 +1,7 @@
 ---
 date: 2019-08-08T22:42:09Z
 title: Sunflower Sutra
+article_title: Sunflower Sutra
 author: חדשות ישראל
 hero_image: "/content/images/adrien-olichon--aOsCcTJXWY-unsplash.jpg"
 article_title: ''
