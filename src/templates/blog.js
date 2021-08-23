@@ -33,8 +33,8 @@ export default function Blog(props) {
           />
         </figure>
         <div className={blogTemplateStyles.blog__info}>
-          <h1>{data.frontmatter.title}</h1>
-          <h3>{data.frontmatter.date}</h3>
+          <h1><span>{data.frontmatter.article_title}</span></h1>
+          <h3>{data.frontmatter.date}&nbsp;&nbsp;|&nbsp;&nbsp;{data.frontmatter.author}</h3>
         </div>
         <div
           className={blogTemplateStyles.blog__body}
@@ -65,8 +65,9 @@ export const getPostData = graphql`
       }
       frontmatter {
         title
+        article_title
         author
-        date(formatString: "MMMM Do, YYYY")
+        date(formatString: "Do בMMMM YYYY", locale: "he")
         hero_image {
           childImageSharp {
             fluid(maxWidth: 1500) {
