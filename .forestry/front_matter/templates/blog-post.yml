@@ -4,7 +4,13 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: seo title
+- name: article_title
+  type: text
+  config:
+    required: false
+  label: article title
+  description: This title will be used in the article heading
 - name: author
   type: select
   default: ''
