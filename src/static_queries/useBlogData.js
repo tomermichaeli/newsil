@@ -8,7 +8,7 @@ export default function useBlogData() {
           node {
             id
             frontmatter {
-              date(formatString: "MMMM Do, YYYY")
+              date(formatString: "Do בMMMM YYYY", locale: "he")
               author
               title
               article_title
