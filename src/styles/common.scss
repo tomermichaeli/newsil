@@ -1,0 +1,9 @@
+$highlight-color: #e87979;
+
+@mixin brand-highlight {
+  color: white;
+  background-color: $highlight-color;
+  padding: 0 5px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}

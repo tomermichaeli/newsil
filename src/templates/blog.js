@@ -2,9 +2,8 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import useBlogData from '../static_queries/useBlogData'
-import blogTemplateStyles from "../styles/templates/blog.module.scss"
-//this component handles the blur img & fade-ins
-import Img from 'gatsby-image'
+import * as blogTemplateStyles from "../styles/templates/blog.module.scss"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function Blog(props) {
   const data = props.data.markdownRemark
@@ -27,10 +26,9 @@ export default function Blog(props) {
     <Layout>
       <article className={blogTemplateStyles.blog}>
         <figure className={blogTemplateStyles.blog__hero}>
-          <Img
-            fluid={data.frontmatter.hero_image.childImageSharp.fluid}
-            alt={data.frontmatter.title}
-          />
+          <GatsbyImage
+            image={data.frontmatter.hero_image.childImageSharp.gatsbyImageData}
+            alt={data.frontmatter.title} />
         </figure>
         <div className={blogTemplateStyles.blog__info}>
           <h1><span>{data.frontmatter.article_title}</span></h1>
@@ -52,31 +50,28 @@ export default function Blog(props) {
         </div>
       </article>
     </Layout>
-  )
+  );
 }
 
 //dynamic page query, must occur within each post context
 //$slug is made available by context from createPages call in gatsby-node.js
-export const getPostData = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        article_title
-        author
-        date(formatString: "Do בMMMM YYYY", locale: "he")
-        hero_image {
-          childImageSharp {
-            fluid(maxWidth: 1500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+export const getPostData = graphql`query ($slug: String!) {
+  markdownRemark(fields: {slug: {eq: $slug}}) {
+    fields {
+      slug
+    }
+    frontmatter {
+      title
+      article_title
+      author
+      date(formatString: "Do בMMMM YYYY", locale: "he")
+      hero_image {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      html
     }
+    html
   }
+}
 `
