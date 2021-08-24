@@ -4,7 +4,6 @@ title: Sunflower Sutra
 article_title: Sunflower Sutra
 author: חדשות ישראל
 hero_image: "/content/images/adrien-olichon--aOsCcTJXWY-unsplash.jpg"
-article_title: Sunflower Sutra
 
 ---
 אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה. אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה אבגדה.
