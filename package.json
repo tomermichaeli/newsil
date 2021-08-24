@@ -50,5 +50,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tomermichaeli/newsil"
+  },
+  "engines": {
+    "node": ">=12.3.0"
   }
 }
