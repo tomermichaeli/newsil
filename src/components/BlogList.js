@@ -22,6 +22,7 @@ export default function BlogList() {
                         alt={blog.node.frontmatter.title} />
                     </div>}
                   <div className={blogListStyles.list__info}>
+                    <h4>{blog.node.frontmatter.topic}</h4>
                     <h2>{blog.node.frontmatter.article_title}</h2>
                     <h3>{blog.node.frontmatter.date}</h3>
                     <p>{blog.node.excerpt}</p>
