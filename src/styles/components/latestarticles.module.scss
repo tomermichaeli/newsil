@@ -1,20 +1,31 @@
 .latest {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1rem;
+  grid-column-gap: 1.5rem;
 
+  a:hover {
+    opacity: 1;
 
-  .item {
+    picture {
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
 
+    .title {
+      transform: translateY(5px);
+    }
   }
 
   .title {
-
+    padding: 0.5rem;
+    transition: transform 0.3s ease-out;
   }
 
   .hero {
-    height: 20vh;
+    height: 30vh;
+    max-height: 150px;
     overflow: hidden;
+    background-color: #000;
   }
 
   img {

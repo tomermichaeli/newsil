@@ -1,27 +1,26 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { graphql, Link } from "gatsby"
-import useBlogData from '../static_queries/useBlogData'
+import { graphql } from "gatsby"
 import * as blogTemplateStyles from "../styles/templates/blog.module.scss"
 import { GatsbyImage } from "gatsby-plugin-image";
 import LatestArticles from "../components/LatestArticles"
 
 export default function Blog(props) {
   const data = props.data.markdownRemark
-  const allBlogData = useBlogData()
-  const nextSlug = getNextSlug(data.fields.slug)
-
-  function getNextSlug(slug) {
-    const allSlugs = allBlogData.map(blog => {
-      return blog.node.fields.slug
-    })
-    const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
-    if(nextSlug !== undefined && nextSlug !== '') {
-      return nextSlug
-    } else {
-      return allSlugs[0]
-    }
-  }
+  // const allBlogData = useBlogData()
+  // const nextSlug = getNextSlug(data.fields.slug)
+  //
+  // function getNextSlug(slug) {
+  //   const allSlugs = allBlogData.map(blog => {
+  //     return blog.node.fields.slug
+  //   })
+  //   const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
+  //   if(nextSlug !== undefined && nextSlug !== '') {
+  //     return nextSlug
+  //   } else {
+  //     return allSlugs[0]
+  //   }
+  // }
 
   return (
     <Layout>
@@ -38,7 +37,7 @@ export default function Blog(props) {
         <div
           className={blogTemplateStyles.blog__body}
           dangerouslySetInnerHTML={{ __html: data.html }}
-        ></div>
+        />
         <div className={blogTemplateStyles.blog__footer}>
           {/*<h2>*/}
           {/*  Written By: {data.frontmatter.author}*/}

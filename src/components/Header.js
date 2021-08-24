@@ -5,8 +5,9 @@ import * as headerStyles from "../styles/components/header.module.scss"
 export default function Header(props) {
   return (
     <header
-      className={`${headerStyles.header} ${props.page === 'info' &&
-        headerStyles.info_page}`}
+      className={headerStyles.header}
+      // className={`${headerStyles.header} ${props.page === 'info' &&
+      //   headerStyles.info_page}`}
     >
       <nav
         className={headerStyles.header__nav}
@@ -24,7 +25,7 @@ export default function Header(props) {
                   ? "/"
                   : "/info"
               }
-              activeClassName={headerStyles.navItemActive}
+              // activeClassName={headerStyles.navItemActive}
             >
               {props.page === 'info'
                 ? "close"
