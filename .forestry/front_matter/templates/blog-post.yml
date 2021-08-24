@@ -24,6 +24,27 @@ fields:
       path: authors
   label: author
   description: Enter author of post
+- name: topic
+  type: select
+  default: חדשות
+  config:
+    required: true
+    options:
+    - פוליטיקה
+    - כלכלה
+    - ביטחון
+    - מדיני
+    - בריאות
+    - חינוך
+    - חדשות
+    - ספורט
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: topic
+  description: The topic of the article
 - name: date
   type: datetime
   label: date
