@@ -1,7 +1,19 @@
 .blog {
+  position: relative;
   h1 {
     margin-bottom: 0.7rem;
   }
+}
+
+.back {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  z-index: 1;
+  width: 3em;
+  height: 3em;
+  opacity: 0.3;
+  display: none;
 }
 
 .blog__hero {
@@ -100,6 +112,9 @@
     display: flex;
     flex-direction: column;
   }
+  .back {
+    display: initial;
+  }
   .blog__body {
     max-width: 800px;
     padding: 0 2rem;
@@ -142,6 +157,9 @@
 }
 
 @media (min-width: 1440px) {
+  .back {
+    position: fixed;
+  }
   .blog__hero {
     height: 70vh;
   }
