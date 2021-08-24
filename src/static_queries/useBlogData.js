@@ -10,6 +10,7 @@ export default function useBlogData() {
           date(formatString: "Do בMMMM YYYY", locale: "he")
           author
           title
+          topic
           article_title
           hero_image {
             childImageSharp {

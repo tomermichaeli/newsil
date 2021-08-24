@@ -7,7 +7,8 @@
   "author": "Tomer Michaeli",
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "clean": "gatsby clean",
+    "dev": "gatsby develop -H 0.0.0.0",
     "develop": "yarn dev",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "yarn dev",

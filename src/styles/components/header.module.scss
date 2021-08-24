@@ -1,12 +1,13 @@
 .header {
   h1 {
     margin-bottom: 0;
+    padding: 0 0.5rem;
   }
 }
 
 .header__nav {
-  padding: 1.5rem 1.25rem;
-  border-bottom: 1px solid #EBEBEB;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ebebeb;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -14,6 +15,10 @@
   img {
     margin-bottom: 0;
   }
+}
+
+.tweets {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -25,10 +30,16 @@
     top: 0;
   }
 
+  .tweets {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
   .header__nav {
-    padding: 2rem;
+    padding: 2rem 0.5rem;
     height: 100%;
-    border-right: 1px solid #EBEBEB;
+    border-right: 1px solid #ebebeb;
     border-bottom: none;
     flex-direction: column;
     align-items: flex-start;

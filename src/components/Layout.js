@@ -8,9 +8,7 @@ export default function Layout(props) {
   const { title, description } = useSiteMetadata()
   return (
     <section
-      className={`${layoutStyles.layout} ${
-        props.page === "info" && 
-        layoutStyles.info_page}`}
+      className={layoutStyles.layout}
       style={{
         backgroundColor: props.bgColor,
       }}
@@ -19,6 +17,7 @@ export default function Layout(props) {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </Helmet>
       <Header page={props.page} title={title} />
       <div className={layoutStyles.content}>{props.children}</div>

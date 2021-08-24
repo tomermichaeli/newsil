@@ -25,14 +25,16 @@ export default function Blog(props) {
   return (
     <Layout>
       <article className={blogTemplateStyles.blog}>
-        <figure className={blogTemplateStyles.blog__hero}>
-          <GatsbyImage
-            image={data.frontmatter.hero_image.childImageSharp.gatsbyImageData}
-            alt={data.frontmatter.title} />
-        </figure>
+        {data.frontmatter.hero_image &&
+          <figure className={blogTemplateStyles.blog__hero}>
+            <GatsbyImage
+              image={data.frontmatter.hero_image.childImageSharp.gatsbyImageData}
+              alt={data.frontmatter.title} />
+          </figure>
+        }
         <div className={blogTemplateStyles.blog__info}>
           <h1><span>{data.frontmatter.article_title}</span></h1>
-          <h3>{data.frontmatter.date}&nbsp;&nbsp;|&nbsp;&nbsp;{data.frontmatter.author}</h3>
+          <h3>{data.frontmatter.date}&nbsp;&nbsp;|&nbsp;&nbsp;{data.frontmatter.topic}&nbsp;&nbsp;|&nbsp;&nbsp;{data.frontmatter.author}</h3>
         </div>
         <div
           className={blogTemplateStyles.blog__body}
@@ -48,7 +50,7 @@ export default function Blog(props) {
           {/*  </svg>*/}
           {/*</Link>*/}
 
-          <LatestArticles />
+          <LatestArticles articles={props.data.allMarkdownRemark.edges} />
         </div>
       </article>
     </Layout>
@@ -66,6 +68,7 @@ export const getPostData = graphql`query ($slug: String!) {
       title
       article_title
       author
+      topic
       date(formatString: "Do בMMMM YYYY", locale: "he")
       hero_image {
         childImageSharp {
@@ -74,6 +77,29 @@ export const getPostData = graphql`query ($slug: String!) {
       }
     }
     html
+  }
+
+  allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}, limit: 3, filter:{fields: {slug: {ne: $slug}}}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          date(formatString: "Do בMMMM YYYY", locale: "he")
+          author
+          article_title
+          topic
+          hero_image {
+            childImageSharp {
+              gatsbyImageData(width: 300, placeholder: DOMINANT_COLOR)
+            }
+          }
+        }
+        excerpt(pruneLength: 200, truncate: true)
+        fields {
+          slug
+        }
+      }
+    }
   }
 }
 `

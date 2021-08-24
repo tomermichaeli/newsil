@@ -6,8 +6,8 @@ export default function Header(props) {
   return (
     <header
       className={headerStyles.header}
-      // className={`${headerStyles.header} ${props.page === 'info' &&
-      //   headerStyles.info_page}`}
+    // className={`${headerStyles.header} ${props.page === 'info' &&
+    //   headerStyles.info_page}`}
     >
       <nav
         className={headerStyles.header__nav}
@@ -17,8 +17,12 @@ export default function Header(props) {
         <Link to="/">
           <h1>{props.title}</h1>
         </Link>
+        <hr style={{ color: "#e87979" }} />
+        <div className={headerStyles.tweets}>
+          <a class="twitter-timeline" data-lang="he" data-height="2000" href="https://twitter.com/thenewsil?ref_src=twsrc%5Etfw"></a>
+        </div>
         <div>
-          <h1>
+          {/* <h1>
             <Link
               to={
                 props.page === 'info'
@@ -31,7 +35,7 @@ export default function Header(props) {
                 ? "close"
                 : "info"}
             </Link>
-          </h1>
+          </h1> */}
         </div>
       </nav>
     </header>
