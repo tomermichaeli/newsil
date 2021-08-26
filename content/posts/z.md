@@ -7,4 +7,4 @@ article_title: שידור חי
 author: חדשות ישראל
 
 ---
-<video src="https://live-cdn.dvidshub.net/webcast/26975/master.m3u8"/>
+<video src="https://live-cdn.dvidshub.net/webcast/26975/master.m3u8" controls autoplay/>
