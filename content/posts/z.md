@@ -7,7 +7,7 @@ article_title: 'שידור חי: עדכון מהפנטגון על הפיגוע �
 author: חדשות ישראל
 
 ---
-<video src="https://live-cdn.dvidshub.net/webcast/26975/master.m3u8" controls autoplay width="100%"></video>
+<video src="https://live-cdn.dvidshub.net/webcast/26975/master.m3u8" controls width="100%"></video>
 
 #### שידור חי: CNN
 
