@@ -1,7 +1,7 @@
 ---
 topic: חדשות
 date: 2021-08-26T14:30:38Z
-hero_image: "/content/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
+hero_image: "/content/images/img_2839.JPG"
 title: שידור חי הפנטגון
 article_title: 'שידור חי: עדכון מהפנטגון על הפיגוע בנמל התעופה בקאבול'
 author: חדשות ישראל
