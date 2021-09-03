@@ -94,10 +94,8 @@
 
   ul,
   ol {
-    //margin-left: 1.25rem;
     margin-left: 0.5rem;
     margin-bottom: 1.25rem;
-    //padding-left: 1.45rem;
     padding-left: 0.5rem;
     margin-right: 1.25rem;
   }
@@ -111,8 +109,7 @@
 }
 
 .bottomLine {
-  // border-color: red;
-  background-color: #e66c6c;
+  background-color: $highlight-color;
   height: 0.1rem;
 }
 
@@ -172,8 +169,6 @@
   .blog__hero {
     height: 70vh;
   }
-  // .blog__info {
-  // }
   .blog__footer {
     padding: 2rem 2rem 3rem 2rem;
   }

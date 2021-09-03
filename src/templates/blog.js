@@ -2,41 +2,29 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import * as blogTemplateStyles from "../styles/templates/blog.module.scss"
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 import LatestArticles from "../components/LatestArticles"
 
 export default function Blog(props) {
   const data = props.data.markdownRemark
-  // const allBlogData = useBlogData()
-  // const nextSlug = getNextSlug(data.fields.slug)
-  //
-  // function getNextSlug(slug) {
-  //   const allSlugs = allBlogData.map(blog => {
-  //     return blog.node.fields.slug
-  //   })
-  //   const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
-  //   if(nextSlug !== undefined && nextSlug !== '') {
-  //     return nextSlug
-  //   } else {
-  //     return allSlugs[0]
-  //   }
-  // }
 
   return (
     <Layout>
       <article className={blogTemplateStyles.blog}>
         <Link to="/" className={blogTemplateStyles.back}>
-          <svg xmlns="http://www.w3.org/2000/svg"  version="1.1" x="0px" y="0px" viewBox="0 0 26 26" enableBackground="new 0 0 26 26" >
-            <path d="M23.021,12.294l-8.714-8.715l-1.414,1.414l7.007,7.008H2.687v2h17.213l-7.007,7.006l1.414,1.414l8.714-8.713  C23.411,13.317,23.411,12.685,23.021,12.294z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 26 26"
+               enableBackground="new 0 0 26 26">
+            <path
+              d="M23.021,12.294l-8.714-8.715l-1.414,1.414l7.007,7.008H2.687v2h17.213l-7.007,7.006l1.414,1.414l8.714-8.713  C23.411,13.317,23.411,12.685,23.021,12.294z" />
           </svg>
         </Link>
 
         {data.frontmatter.hero_image &&
-          <figure className={blogTemplateStyles.blog__hero}>
-            <GatsbyImage
-              image={data.frontmatter.hero_image.childImageSharp.gatsbyImageData}
-              alt={data.frontmatter.title} />
-          </figure>
+        <figure className={blogTemplateStyles.blog__hero}>
+          <GatsbyImage
+            image={data.frontmatter.hero_image.childImageSharp.gatsbyImageData}
+            alt={data.frontmatter.title} />
+        </figure>
         }
         <div className={blogTemplateStyles.blog__info}>
           <h1><span>{data.frontmatter.article_title}</span></h1>
@@ -47,17 +35,14 @@ export default function Blog(props) {
           dangerouslySetInnerHTML={{ __html: data.html }}
         />
         <div className={blogTemplateStyles.blog__footer}>
-          {/*<h2>*/}
-          {/*  Written By: {data.frontmatter.author}*/}
-          {/*</h2>*/}
 
-        <hr className={blogTemplateStyles.bottomLine}></hr>
+          <hr className={blogTemplateStyles.bottomLine} />
 
           <LatestArticles articles={props.data.allMarkdownRemark.edges} />
         </div>
       </article>
     </Layout>
-  );
+  )
 }
 
 //dynamic page query, must occur within each post context

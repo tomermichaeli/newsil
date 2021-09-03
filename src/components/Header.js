@@ -20,22 +20,6 @@ export default function Header(props) {
             href="https://twitter.com/thenewsil?ref_src=twsrc%5Etfw"
           />
         </div>
-        <div>
-          {/* <h1>
-            <Link
-              to={
-                props.page === 'info'
-                  ? "/"
-                  : "/info"
-              }
-              // activeClassName={headerStyles.navItemActive}
-            >
-              {props.page === 'info'
-                ? "close"
-                : "info"}
-            </Link>
-          </h1> */}
-        </div>
       </nav>
     </header>
   )
