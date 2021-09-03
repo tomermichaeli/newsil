@@ -51,6 +51,8 @@ export default function Blog(props) {
           {/*  Written By: {data.frontmatter.author}*/}
           {/*</h2>*/}
 
+        <hr className={blogTemplateStyles.bottomLine}></hr>
+
           <LatestArticles articles={props.data.allMarkdownRemark.edges} />
         </div>
       </article>
