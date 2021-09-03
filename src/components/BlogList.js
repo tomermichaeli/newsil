@@ -13,7 +13,7 @@ export default function BlogList() {
           .filter(blog => blog.node.frontmatter.title !== "")
           .map(blog => {
             return (
-              <Link to={`/blog/${blog.node.fields.slug}`} key={blog.node.id}>
+              <Link to={`/news/${blog.node.fields.slug}`} key={blog.node.id}>
                 <li key={blog.node.fields.slug}>
                   {blog.node.frontmatter.hero_image &&
                     <div className={blogListStyles.list__hero}>

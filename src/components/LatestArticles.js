@@ -10,7 +10,7 @@ const LatestArticles = (props) => {
     <ul className={latest}>
       {data.map((article) => {
         return (
-          <Link to={`/blog/${article.node.fields.slug}`} key={article.node.id}>
+          <Link to={`/news/${article.node.fields.slug}`} key={article.node.id}>
             <li>
               <div className={hero}>
                 {article.node.frontmatter.hero_image &&
