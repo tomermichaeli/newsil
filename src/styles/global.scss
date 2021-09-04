@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   color: #000;
   font-size: 16px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 a {
@@ -76,13 +77,13 @@ p {
     letter-spacing: -1px;
     line-height: 1.1875;
   }
-  
+
   h2 {
     font-size: 1.5rem;
     letter-spacing: -.75px;
     line-height: 1.1667;
   }
-  
+
   h3 {
     letter-spacing: -.5px;
     line-height: 1.1875;
