@@ -62,6 +62,16 @@ fields:
   label: hero image
   description: Enter hero image for blog post here
   default: "/content/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
+- name: time
+  type: datetime
+  description: Time post was created
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: time
+  hidden: false
 pages:
 - content/posts/1.md
 - content/posts/30.8.md
