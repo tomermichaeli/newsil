@@ -62,10 +62,6 @@ fields:
   label: hero image
   description: Enter hero image for blog post here
   default: "/content/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
-- name: file_gallery
-  type: image_gallery
-  config: {}
-  label: file gallery
 pages:
 - content/posts/1.md
 - content/posts/30.8.md
