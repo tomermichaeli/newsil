@@ -64,10 +64,12 @@ fields:
   default: "/content/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
 pages:
 - content/posts/1.md
+- content/posts/3.md
 - content/posts/30.8.md
 - content/posts/48.md
 - content/posts/אתה-פחדן-תתעורר-השיחה-הקשה-בין-בנט-לאביו-של-הלוחם-שנפצע.md
 - content/posts/בנט-בפוסט-בפייסבוק.md
+- content/posts/בנט-בתדרוך-אחרי-נאומו-באום.md
 - content/posts/גנץ-בהערכת-מצב-בשומרון.md
 - content/posts/גנץ-בהערכת-מצב.md
 - content/posts/דריסת-השוטרים-בנהריה.md
@@ -77,8 +79,10 @@ pages:
 - content/posts/העלאת-גיל-הפרישה-לנשים.md
 - content/posts/הקלות-חדשות-לרצועה.md
 - content/posts/השרה-מרב-מיכאלי-מסבירה-את-הנסיעה-לארה-ב.md
+- content/posts/התו-הירוק-המעודכן-נכנס-לתוקף.md
 - content/posts/התיכונים-המצטיינים-תשפ-א.md
 - content/posts/התקדמות-במצוד-אחר-המחבלים.md
+- content/posts/ועדת-הבדיקה-לבריחה-מכלא-גלבוע.md
 - content/posts/טיל-נט-שוגר-מסוריה-לשטח-ישראל.md
 - content/posts/כיתות-ח-י-ב-בערים-אדומות-עם-שיעור-מחוסנים-נמוך-ילמדו-מרחוק.md
 - content/posts/לפיד-כלכלה-תמורת-ביטחון.md
@@ -86,6 +90,7 @@ pages:
 - content/posts/סגר-ביוש-בחגי-תשרי.md
 - content/posts/סיכום-חדשות-החג.md
 - content/posts/פגישת-בנט-ובלינקן.md
+- content/posts/פציעת-הלוחמים-באזור-ג-נין.md
 - content/posts/צילומי-אוויר-ארכיון-צהל.md
 - content/posts/ראש-השבכ-הבא.md
 - content/posts/תחקיר-ראשוני-בראל-חדריה-שמואלי.md
