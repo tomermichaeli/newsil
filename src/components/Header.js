@@ -24,3 +24,114 @@ export default function Header(props) {
     </header>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+import React from "react"
+import { Link } from "gatsby"
+import * as headerStyles from "../styles/components/header.module.scss"
+import { isConditionalExpression } from "typescript";
+
+
+
+
+
+
+// function listitems() {
+//   const list = ["a", "b", "c"];
+//   for(let i = 0; i < list.length; i++){
+//       listvalue = document.createElement("li");
+//       listvalue.innerHTML = list[i];
+//       listelement.appendChild(listvalue);
+//   }
+//   return listelement;
+// }
+// const listelement = document.createElement('ul', {class: 'listclass'}, listitems());
+
+
+// document.getElementById("list").appendChild(listitems()); 
+
+
+
+
+
+/*
+MONGODB ATTEMPT 1
+
+
+const { MongoClient } = require('mongodb');
+
+const uri = "mongodb+srv://test:test@cluster0.anx9a.mongodb.net/new_db?retryWrites=true&w=majority";
+
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  console.log(collection)
+  client.close();
+});
+
+
+
+window.onload =  document.getElementById("list").appendChild(listitems());
+function listitems() {
+  const listelement = document.createElement("ul");
+  listelement.setAttribute("class", "listclass");
+  const list = ["a", "b", "c"];
+
+  for(let i = 0; i < list.length; i++){
+      var listvalue = document.createElement("li");
+      listvalue.innerHTML = list[i];
+      listelement.appendChild(listvalue);
+  }
+  return listelement;
+}
+
+// window.onload = function(){
+//   console.log("hi")
+//   document.getElementById("list").appendChild(listitems());
+// }
+
+
+
+
+
+
+export default function Header(props) {
+  return (
+    <header className={headerStyles.header}>
+      <nav className={headerStyles.header__nav} role="navigation" aria-label="main navigation">
+        <Link to="/">
+          <h1>{props.title}</h1>
+        </Link>
+
+        
+
+
+        <div className={headerStyles.tweets}>
+        <div id="list">
+        </div>
+        
+        </div>
+      </nav>
+    </header>
+  )
+}
+
+
+*/

@@ -17,6 +17,8 @@
     "forestry-preview": "gatsby develop -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "gatsby": "^3.12.0",
     "gatsby-image": "^3.11.0",
     "gatsby-link": "^3.12.0",
@@ -33,6 +35,8 @@
     "gatsby-transformer-remark": "^4.9.0",
     "gatsby-transformer-sharp": "^3.12.0",
     "gatsby-transformer-yaml": "^3.12.0",
+    "mongodb": "^4.1.4",
+    "mongoose": "^6.0.12",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
