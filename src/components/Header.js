@@ -2,6 +2,43 @@ import React from "react"
 import { Link } from "gatsby"
 import * as headerStyles from "../styles/components/header.module.scss"
 
+// const mongoose = require("mongoose");
+// const uri = "mongodb+srv://test:test@cluster0.anx9a.mongodb.net/thenewsil?retryWrites=true&w=majority";
+// try{
+//   mongoose.connect(uri, {useNewUrlParser: true}, {useUnifiedTopology: true});
+// }
+// catch(error){
+//   console.log('could not connect')
+// }
+// const DocSchema = {
+//   headline: String,
+//   body: String,
+//   time: String
+// }
+// const Doc = mongoose.model("updates", DocSchema); //(collection, data schema)
+// var updateCursor = Doc.find({}).sort({"_id": -1}).limit(4);
+
+// console.log(updateCursor[0]);
+
+// //
+
+
+// const MongoClient = require('mongodb').MongoClient;
+// const uri = "mongodb+srv://test:test@cluster0.anx9a.mongodb.net/thenewsil?retryWrites=true&w=majority";
+// MongoClient.connect(uri, { useNewUrlParser: true }, function(err, client) {
+// if (err) {
+//   console.log('error connecting...')
+// }
+// else {
+//   var collection = client.db('thenewsil').collection('updates');
+//   var updateCursor = collection.find({}).sort({"_id": -1}).limit(4);
+//   console.log(updateCursor[0]);
+// }
+// });
+
+
+
+
 export default function Header(props) {
   return (
     <header className={headerStyles.header}>
