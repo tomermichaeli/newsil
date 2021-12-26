@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import * as headerStyles from "../styles/components/header.module.scss"
+
 
 // const mongoose = require("mongoose");
 // const uri = "mongodb+srv://test:test@cluster0.anx9a.mongodb.net/thenewsil?retryWrites=true&w=majority";
@@ -40,6 +41,15 @@ import * as headerStyles from "../styles/components/header.module.scss"
 
 
 export default function Header(props) {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch('http://localhost:5001')
+  .then(response => response.json())
+  .then(newData => {
+    setData(newData)
+  });
+  }, []);
+  
   return (
     <header className={headerStyles.header}>
       <nav className={headerStyles.header__nav} role="navigation" aria-label="main navigation">
@@ -48,14 +58,19 @@ export default function Header(props) {
         </Link>
 
         <div className={headerStyles.tweets}>
-          <a
+          {/* <a
             aria-hidden="true"
             aria-label="twitter-timeline"
             className="twitter-timeline"
             data-lang="he"
             data-height="100%"
             href="https://twitter.com/thenewsil?ref_src=twsrc%5Etfw"
-          />
+          /> */}
+          <ul>
+          {data.map(item => (
+            <li>{JSON.stringify(item)}</li>
+          ))}
+          </ul>
         </div>
       </nav>
     </header>
