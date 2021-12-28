@@ -44,7 +44,7 @@ export default function Header(props) {
   const [data, setData] = useState([]);
   useEffect(() => {
     // fetch('http://localhost:5001')
-    fetch('https://snapserver.vercel.app')
+    fetch('https://5.29.45.104:5001')
     .then(response => response.json())
   .then(newData => {
     setData(newData)
