@@ -43,8 +43,7 @@ import * as headerStyles from "../styles/components/header.module.scss"
 export default function Header(props) {
   const [data, setData] = useState([]);
   useEffect(() => {
-    // fetch('http://localhost:5001')
-    fetch('https://5.29.45.104:5001')
+    fetch('http://localhost:5001')
     .then(response => response.json())
   .then(newData => {
     setData(newData)
