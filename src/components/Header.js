@@ -43,8 +43,9 @@ import * as headerStyles from "../styles/components/header.module.scss"
 export default function Header(props) {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5001')
-  .then(response => response.json())
+    // fetch('http://localhost:5001')
+    fetch('http://5.29.45.104:5001')
+    .then(response => response.json())
   .then(newData => {
     setData(newData)
   });
@@ -68,7 +69,15 @@ export default function Header(props) {
           /> */}
           <ul>
           {data.map(item => (
-            <li>{JSON.stringify(item)}</li>
+            // <li>{JSON.stringify(item)}</li>
+            <>
+            <li className={headerStyles.update_container}>
+              <div className={headerStyles.time_old}>{item["time"].slice(11,16) + " | " + item["time"].slice(8,10) + "/" + item["time"].slice(5,7) + "/" + item["time"].slice(0,4)}</div>
+              <div className={headerStyles.headline_old}>{item["headline"]}</div>
+              <div className={headerStyles.body_old}>{item["body"]}</div>
+            </li>
+            <hr className={headerStyles.sep}></hr>
+            </>
           ))}
           </ul>
         </div>
