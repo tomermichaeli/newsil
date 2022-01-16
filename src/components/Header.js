@@ -57,31 +57,31 @@ export default function Header(props) {
         <Link to="/">
           <h1>{props.title}</h1>
         </Link>
-
-        <div className={headerStyles.tweets}>
-          {/* <a
-            aria-hidden="true"
-            aria-label="twitter-timeline"
-            className="twitter-timeline"
-            data-lang="he"
-            data-height="100%"
-            href="https://twitter.com/thenewsil?ref_src=twsrc%5Etfw"
-          /> */}
-          <ul>
-          {data.map(item => (
-            // <li>{JSON.stringify(item)}</li>
-            <>
-            <li className={headerStyles.update_container}>
-              <div className={headerStyles.time_old}>{item["time"].slice(11,16) + " | " + item["time"].slice(8,10) + "/" + item["time"].slice(5,7) + "/" + item["time"].slice(0,4)}</div>
-              <div className={headerStyles.headline_old}>{item["headline"]}</div>
-              <div className={headerStyles.body_old}>{item["body"]}</div>
-            </li>
-            <hr className={headerStyles.sep}></hr>
-            </>
-          ))}
-          </ul>
-        </div>
       </nav>
+
+      <div className={headerStyles.tweets}>
+        {/* <a
+          aria-hidden="true"
+          aria-label="twitter-timeline"
+          className="twitter-timeline"
+          data-lang="he"
+          data-height="100%"
+          href="https://twitter.com/thenewsil?ref_src=twsrc%5Etfw"
+        /> */}
+        <ul>
+        {data.map(item => (
+          // <li>{JSON.stringify(item)}</li>
+          <>
+          <li className={headerStyles.update_container}>
+            <div className={headerStyles.headline_old}>{item["headline"]}</div>
+            <div className={headerStyles.time_old}>{item["time"].slice(11,16) + " • " + item["time"].slice(8,10) + "/" + item["time"].slice(5,7) + "/" + item["time"].slice(0,4)}</div>
+            <div className={headerStyles.body_old}>{item["body"]}</div>
+          </li>
+          <hr className={headerStyles.sep}></hr>
+          </>
+        ))}
+        </ul>
+      </div>
     </header>
   )
 }
