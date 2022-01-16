@@ -53,7 +53,7 @@ export default function Header(props) {
   
   return (
     <header className={headerStyles.header}>
-      <nav className={headerStyles.header__nav} role="navigation" aria-label="main navigation">
+      <nav className={headerStyles.header__nav, headerStyles.test1} role="navigation" aria-label="main navigation">
         <Link to="/">
           <h1>{props.title}</h1>
         </Link>
