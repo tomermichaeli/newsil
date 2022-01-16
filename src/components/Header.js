@@ -43,7 +43,8 @@ import * as headerStyles from "../styles/components/header.module.scss"
 export default function Header(props) {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5001')
+    // fetch('http://localhost:5001')
+    fetch('https://newsilserver.herokuapp.com')
     .then(response => response.json())
   .then(newData => {
     setData(newData)
