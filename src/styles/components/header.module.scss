@@ -5,6 +5,11 @@
     padding: 0.25rem 1.25rem;
     color: #e66c6c;
   }
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.header::-webkit-scrollbar {
+  display: none;
 }
 
 .header__nav {
