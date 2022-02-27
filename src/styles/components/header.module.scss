@@ -25,7 +25,7 @@
 }
 
 .tweets {
-  display: none;
+  // display: none;
 }
 
 
@@ -40,6 +40,9 @@
   /* background-color: #DBDADA; */
   line-height: 2rem;
   font-weight: 450;
+}
+.headerspan:hover{
+  color: #be3e3e; 
 }
 
 .body_old{
@@ -78,6 +81,26 @@ hr.sep{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
+
+.quoted_container{
+  width: 90%;
+  margin-top: 0.5rem;
+  padding-right: 0.75rem;
+  border-color: #be3e3e;
+  border-right-style: solid;
+}
+.time_quoted{
+  direction: rtl;
+  font-family: "Heebo", "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
+  // font-size: 1rem;
+  width: 90%;
+  border: none;
+  outline: none;
+  color: #919191;
+  font-weight:450;
+}
+
 
 //
 
@@ -124,3 +147,87 @@ hr.sep{
     }
   }
 }
+
+
+@media (max-width: 768px) {
+  .header {
+    height: 45vh;
+    width: 95%;
+    align-self: center;
+    // position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      // position: fixed;
+      // margin-bottom: 2rem;
+    }
+  }
+
+  .tweets{
+    padding-top: 1rem;
+    background-color: white;
+  }
+
+  .nav_links{
+    // padding-bottom: 2rem;
+  }
+}
+
+
+// BLINKING RED DOT
+// .blinking {
+//   -webkit-animation: 1s blink ease infinite;
+//   -moz-animation: 1s blink ease infinite;
+//   -ms-animation: 1s blink ease infinite;
+//   -o-animation: 1s blink ease infinite;
+//   animation: 1s blink ease infinite;
+  
+// }
+
+// @keyframes "blink" {
+//   from, to {
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 1;
+//   }
+// }
+
+// @-moz-keyframes blink {
+//   from, to {
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 1;
+//   }
+// }
+
+// @-webkit-keyframes "blink" {
+//   from, to {
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 1;
+//   }
+// }
+
+// @-ms-keyframes "blink" {
+//   from, to {
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 1;
+//   }
+// }
+
+// @-o-keyframes "blink" {
+//   from, to {
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 1;
+//   }
+// }

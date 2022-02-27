@@ -6,8 +6,9 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function BlogList() {
   const blogData = useBlogData()
-  function renderBlogData() {
-    return (
+  return (
+    <section>
+      <ul className={blogListStyles.list}>
       <div>
         {blogData
           .filter(blog => blog.node.frontmatter.title !== "")
@@ -32,11 +33,7 @@ export default function BlogList() {
             );
           })}
       </div>
-    );
-  }
-  return (
-    <section>
-      <ul className={blogListStyles.list}>{renderBlogData()}</ul>
+      </ul>
     </section>
   )
 }
