@@ -10,7 +10,8 @@ export default function Info() {
     <Layout page="info" bgColor={infoData.background_color}>
       <section className={infoStyles.info_blurb}>
       {/* <form method="post" action="https://thenewsil.herokuapp.com/lite"> */}
-      <form method="post" action="/">
+      <form method="post" action="http://localhost:3000/abc">
+      {/* <form method="post" action="/"> */}
             <div><input type="datetime-local" name="time" id="time"/></div>
             <div><textarea name="headline" id="headline" class="headline" placeholder="כותרת" rows="5"></textarea></div>
             <div><textarea name="body" id="body" class="body" placeholder="כותרת משנה" rows="5"></textarea></div>
