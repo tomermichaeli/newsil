@@ -150,24 +150,34 @@ hr.sep{
 
 
 @media (max-width: 768px) {
+  .main{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+
   .header {
-    height: 45vh;
-    width: 95%;
+    width: 100%;
     align-self: center;
     // position: fixed;
     left: 0;
     top: 0;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: row;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
 
     h1 {
-      // position: fixed;
-      // margin-bottom: 2rem;
+      padding-bottom: 1rem;
     }
   }
 
   .tweets{
-    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 6rem;
     background-color: white;
   }
 
