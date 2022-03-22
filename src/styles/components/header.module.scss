@@ -10,8 +10,18 @@
     margin-bottom: 0;
     // padding: 0.25rem 1.25rem;
     color: #e66c6c;
+    // position: fixed; CONTINUE FROM HERE
+    padding-bottom: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    h1 {
+      position: relative;
+    }
   }
 }
+
+
 
 // breaking news
 .headline_old{
