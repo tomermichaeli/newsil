@@ -1,40 +1,24 @@
-.header {
-  padding: 1rem 0;
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
   h1 {
     margin-bottom: 0;
-    padding: 0.25rem 1.25rem;
+    // padding: 0.25rem 1.25rem;
     color: #e66c6c;
   }
-  overflow-y: scroll;
-  scrollbar-width: none;
 }
-.header::-webkit-scrollbar {
-  display: none;
-}
-
-.header__nav {
-  padding: 1rem 0;
-  border-bottom: 1px solid #ebebeb;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  img {
-    margin-bottom: 0;
-  }
-}
-
-.tweets {
-  // display: none;
-}
-
 
 // breaking news
 .headline_old{
   direction: rtl;
   font-family: "Heebo", "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.3rem;
-  width: 95%;
+  // width: 95%;
   border: none;
   outline: none;
   /* background-color: #DBDADA; */
@@ -42,7 +26,7 @@
   font-weight: 450;
 }
 .headerspan:hover{
-  color: #be3e3e; 
+  color: #be3e3e;
 }
 
 .body_old{
@@ -82,7 +66,6 @@ hr.sep{
   margin-bottom: 1.5rem;
 }
 
-
 .quoted_container{
   width: 90%;
   margin-top: 0.5rem;
@@ -101,7 +84,6 @@ hr.sep{
   font-weight:450;
 }
 
-
 //
 
 
@@ -110,135 +92,254 @@ hr.sep{
 
 
 
-@media (min-width: 768px) {
-  .header {
-    height: 100vh;
-    width: 30%;
-    position: fixed;
-    left: 0;
-    top: 0;
 
-    h1 {
-      // padding: 0 0.5rem;
-    }
-  }
-
-  .header__nav {
-    padding: 2rem 2rem 2rem 1rem;
-    height: 100%;
-    border-right: 1px solid #ebebeb;
-    border-bottom: none;
-    flex-direction: column;
-    align-items: flex-start;
-    img {
-      margin-bottom: 0;
-    }
-  }
-
-  .tweets {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin-top: 1rem;
-    padding: 0 1.25rem;
-
-    > iframe {
-      height: 100% !important;
-    }
-  }
-}
-
-
-@media (max-width: 768px) {
-  .main{
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
-  }
-
-  .header {
-    width: 100%;
-    align-self: center;
-    // position: fixed;
-    left: 0;
-    top: 0;
-    // display: flex;
-    // flex-direction: row;
-    background-color: #fff;
-    position: fixed;
-    z-index: 1;
-
-    h1 {
-      padding-bottom: 1rem;
-    }
-  }
-
-  .tweets{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 6rem;
-    background-color: white;
-    font-size: smaller;
-  }
-
-  .nav_links{
-    // padding-bottom: 2rem;
-  }
-}
-
-
-// BLINKING RED DOT
-// .blinking {
-//   -webkit-animation: 1s blink ease infinite;
-//   -moz-animation: 1s blink ease infinite;
-//   -ms-animation: 1s blink ease infinite;
-//   -o-animation: 1s blink ease infinite;
-//   animation: 1s blink ease infinite;
-  
+// .main{
+//   // display: none;
 // }
 
-// @keyframes "blink" {
-//   from, to {
-//     opacity: 0;
+// .header {
+//   padding: 1rem 0;
+//   display: flex;
+//   flex-direction: row;
+
+//   h1 {
+//     margin-bottom: 0;
+//     padding: 0.25rem 1.25rem;
+//     color: #e66c6c;
 //   }
-//   50% {
-//     opacity: 1;
+//   overflow-y: scroll;
+//   scrollbar-width: none;
+// }
+// .header::-webkit-scrollbar {
+//   display: none;
+// }
+
+// .header__nav {
+//   padding: 1rem 0;
+//   border-bottom: 1px solid #ebebeb;
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: column;
+//   align-items: center;
+//   img {
+//     margin-bottom: 0;
 //   }
 // }
 
-// @-moz-keyframes blink {
-//   from, to {
-//     opacity: 0;
+// .tweets {
+//   // display: none;
+// }
+
+// // breaking news
+// .headline_old{
+//   direction: rtl;
+//   font-family: "Heebo", "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
+//   font-size: 1.3rem;
+//   width: 95%;
+//   border: none;
+//   outline: none;
+//   /* background-color: #DBDADA; */
+//   line-height: 2rem;
+//   font-weight: 450;
+// }
+// .headerspan:hover{
+//   color: #be3e3e;
+// }
+
+// .body_old{
+//   direction: rtl;
+//   font-family: "Heebo", "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
+//   font-size: 1.1rem;
+//   width: 95%;
+//   border: none;
+//   outline: none;
+//   padding-top: 0.35rem;
+//   /* background-color: #DBDADA; */
+// }
+// .time_old{
+//   direction: rtl;
+//   font-family: "Heebo", "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
+//   font-size: 1rem;
+//   width: 90%;
+//   border: none;
+//   outline: none;
+//   /* background-color: #DBDADA; */
+//   color: #919191;
+//   font-weight:500;
+// }
+// .update_container{
+//   // margin-bottom: 1rem;
+// }
+// hr.sep{
+//   // width: 25%;
+//   margin-left: auto;
+//   margin-right: auto;
+//   // height: 0.3rem;
+//   height: 2px;
+//   background-color: #DADADA;
+//   // border-radius: 1rem;
+//   border-radius: 1px;
+//   margin-top: 1.5rem;
+//   margin-bottom: 1.5rem;
+// }
+
+// .quoted_container{
+//   width: 90%;
+//   margin-top: 0.5rem;
+//   padding-right: 0.75rem;
+//   border-color: #be3e3e;
+//   border-right-style: solid;
+// }
+// .time_quoted{
+//   direction: rtl;
+//   font-family: "Heebo", "Work Sans", "Helvetica Neue", Helvetica, sans-serif;
+//   // font-size: 1rem;
+//   width: 90%;
+//   border: none;
+//   outline: none;
+//   color: #919191;
+//   font-weight:450;
+// }
+
+// //
+
+// @media (min-width: 768px) {
+//   .header {
+//     display: inline-flex;
+//     flex-direction: row;
+//     height: 100vh;
+//     width: 30%;
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+
+//     h1 {
+//       // padding: 0 0.5rem;
+//     }
 //   }
-//   50% {
-//     opacity: 1;
+
+//   .header__nav {
+//     padding: 2rem 2rem 2rem 1rem;
+//     height: 100%;
+//     border-right: 1px solid #ebebeb;
+//     border-bottom: none;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     img {
+//       margin-bottom: 0;
+//     }
+//   }
+
+//   .tweets {
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     margin-top: 1rem;
+//     padding: 0 1.25rem;
+
+//     // > iframe {
+//     //   height: 100% !important;
+//     // }
+//   }
+
+//   .main{
+//     // // display: flex;
+//     // flex-direction: row;
+//     // flex-wrap: wrap;
+
+//   }
+
+// }
+
+// @media (max-width: 768px) {
+//   .main{
+//     display: inline-flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+
+//   }
+
+//   .header {
+//     width: 100%;
+//     align-self: center;
+//     // position: fixed;
+//     left: 0;
+//     top: 0;
+//     // display: flex;
+//     // flex-direction: row;
+//     background-color: #fff;
+//     position: fixed;
+//     z-index: 1;
+
+//     h1 {
+//       padding-bottom: 1rem;
+//     }
+//   }
+
+//   .tweets{
+//     padding-left: 1rem;
+//     padding-right: 1rem;
+//     padding-top: 6rem;
+//     background-color: white;
+//     font-size: smaller;
+//   }
+
+//   .nav_links{
+//     // padding-bottom: 2rem;
 //   }
 // }
 
-// @-webkit-keyframes "blink" {
-//   from, to {
-//     opacity: 0;
-//   }
-//   50% {
-//     opacity: 1;
-//   }
-// }
+// // BLINKING RED DOT
+// // .blinking {
+// //   -webkit-animation: 1s blink ease infinite;
+// //   -moz-animation: 1s blink ease infinite;
+// //   -ms-animation: 1s blink ease infinite;
+// //   -o-animation: 1s blink ease infinite;
+// //   animation: 1s blink ease infinite;
 
-// @-ms-keyframes "blink" {
-//   from, to {
-//     opacity: 0;
-//   }
-//   50% {
-//     opacity: 1;
-//   }
-// }
+// // }
 
-// @-o-keyframes "blink" {
-//   from, to {
-//     opacity: 0;
-//   }
-//   50% {
-//     opacity: 1;
-//   }
-// }
+// // @keyframes "blink" {
+// //   from, to {
+// //     opacity: 0;
+// //   }
+// //   50% {
+// //     opacity: 1;
+// //   }
+// // }
+
+// // @-moz-keyframes blink {
+// //   from, to {
+// //     opacity: 0;
+// //   }
+// //   50% {
+// //     opacity: 1;
+// //   }
+// // }
+
+// // @-webkit-keyframes "blink" {
+// //   from, to {
+// //     opacity: 0;
+// //   }
+// //   50% {
+// //     opacity: 1;
+// //   }
+// // }
+
+// // @-ms-keyframes "blink" {
+// //   from, to {
+// //     opacity: 0;
+// //   }
+// //   50% {
+// //     opacity: 1;
+// //   }
+// // }
+
+// // @-o-keyframes "blink" {
+// //   from, to {
+// //     opacity: 0;
+// //   }
+// //   50% {
+// //     opacity: 1;
+// //   }
+// // }

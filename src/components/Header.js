@@ -44,15 +44,52 @@ export default function Header(props) {
   const [data, setData] = useState([]);
   useEffect(() => {
     // fetch('http://localhost:5001')
-    fetch('https://newsilserver.herokuapp.com')
-    .then(response => response.json())
-  .then(newData => {
-    setData(newData)
-  });
+    fetch('https://newsilserver.herokuapp.com/all')
+      .then(response => response.json())
+      .then(newData => {
+        setData(newData)
+      });
   }, []);
-  
+
 
   //<nav className={headerStyles.header__nav, headerStyles.test1} role="navigation" aria-label="main navigation">
+
+  return (
+    <div className={headerStyles.container}>
+      <nav role="navigation" aria-label="main navigation">
+        <div className={headerStyles.nav_links}>
+          <Link to="/">
+            <h1>{props.title}</h1>
+          </Link>
+        </div>
+      </nav>
+      <div className={headerStyles.tweets}>
+        <ul>
+          {data.slice(0,4).map(item => (
+            <li className={headerStyles.update_container}>
+              <div className={headerStyles.headline_old}><span className={headerStyles.headerspan}>{item["headline"]}</span></div>
+              <div className={headerStyles.time_old}>{item["time"].slice(11, 16) + " • " + item["time"].slice(8, 10) + "/" + item["time"].slice(5, 7) + "/" + item["time"].slice(0, 4)}</div>
+              <div className={headerStyles.body_old}>{item["body"]}</div>
+
+              {item["quote"] != null &&
+                <div className={headerStyles.quoted_container}>
+                  <div>{item["quote_headline"]}</div>
+                  <div className={headerStyles.time_quoted}>{item["quote_time"]}</div>
+                  <div>{item["quote_body"]}</div>
+                </div>
+              }
+
+              <hr className={headerStyles.sep}></hr>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  )
+
+
+
+
   return (
     <div className={headerStyles.main}>
       <header className={headerStyles.header}>
@@ -63,7 +100,7 @@ export default function Header(props) {
             </Link>
           </div>
         </nav>
-      </header>
+
         <div className={headerStyles.tweets}>
           {/* <a
             aria-hidden="true"
@@ -74,27 +111,28 @@ export default function Header(props) {
             href="https://twitter.com/thenewsil?ref_src=twsrc%5Etfw"
           /> */}
           <ul>
-          {data.map(item => (
-            // <li>{JSON.stringify(item)}</li>
-            <>
-            <li className={headerStyles.update_container}>
-              <div className={headerStyles.headline_old}><span className={headerStyles.headerspan}>{item["headline"]}</span></div>
-              <div className={headerStyles.time_old}>{item["time"].slice(11,16) + " • " + item["time"].slice(8,10) + "/" + item["time"].slice(5,7) + "/" + item["time"].slice(0,4)}</div>
-              <div className={headerStyles.body_old}>{item["body"]}</div>
-            
-              {item["quote"] != null &&
-                <div className={headerStyles.quoted_container}>
-                <div>{item["quote_headline"]}</div>
-                <div className={headerStyles.time_quoted}>{item["quote_time"]}</div>
-                <div>{item["quote_body"]}</div></div>
-              }
+            {data.map(item => (
+              // <li>{JSON.stringify(item)}</li>
+              <>
+                <li className={headerStyles.update_container}>
+                  <div className={headerStyles.headline_old}><span className={headerStyles.headerspan}>{item["headline"]}</span></div>
+                  <div className={headerStyles.time_old}>{item["time"].slice(11, 16) + " • " + item["time"].slice(8, 10) + "/" + item["time"].slice(5, 7) + "/" + item["time"].slice(0, 4)}</div>
+                  <div className={headerStyles.body_old}>{item["body"]}</div>
 
-            </li>
-            <hr className={headerStyles.sep}></hr>
-            </>
-          ))}
+                  {item["quote"] != null &&
+                    <div className={headerStyles.quoted_container}>
+                      <div>{item["quote_headline"]}</div>
+                      <div className={headerStyles.time_quoted}>{item["quote_time"]}</div>
+                      <div>{item["quote_body"]}</div></div>
+                  }
+
+                </li>
+                <hr className={headerStyles.sep}></hr>
+              </>
+            ))}
           </ul>
         </div>
+      </header>
     </div>
   )
 }
