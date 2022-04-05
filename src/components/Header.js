@@ -65,7 +65,7 @@ export default function Header(props) {
       </nav>
       <div className={headerStyles.tweets}>
         <ul>
-          {data.slice(0,4).map(item => (
+          {data.slice(0,25).map(item => (
             <li className={headerStyles.update_container}>
               <div className={headerStyles.headline_old}><span className={headerStyles.headerspan}>{item["headline"]}</span></div>
               <div className={headerStyles.time_old}>{item["time"].slice(11, 16) + " • " + item["time"].slice(8, 10) + "/" + item["time"].slice(5, 7) + "/" + item["time"].slice(0, 4)}</div>
