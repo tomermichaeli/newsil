@@ -16,7 +16,7 @@
   padding-top: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  width: 75%;
+ 
 
   h1 {
     margin-bottom: 0;
@@ -30,6 +30,17 @@
     h1 {
       position: relative;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .container{
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .container{
+    width: 100%;
   }
 }
 
