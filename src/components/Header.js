@@ -64,25 +64,48 @@ export default function Header(props) {
         </div>
       </nav>
       <div className={headerStyles.tweets}>
-        <ul>
-          {data.slice(0,25).map(item => (
-            <li className={headerStyles.update_container}>
-              <div className={headerStyles.headline_old}><span className={headerStyles.headerspan}>{item["headline"]}</span></div>
-              <div className={headerStyles.time_old}>{item["time"].slice(11, 16) + " • " + item["time"].slice(8, 10) + "/" + item["time"].slice(5, 7) + "/" + item["time"].slice(0, 4)}</div>
-              <div className={headerStyles.body_old}>{item["body"]}</div>
+        <div className={headerStyles.web}>
+          <ul>
+            {data.slice(0, 25).map(item => (
+              <li className={headerStyles.update_container}>
+                <div className={headerStyles.headline_old}><span className={headerStyles.headerspan}>{item["headline"]}</span></div>
+                <div className={headerStyles.time_old}>{item["time"].slice(11, 16) + " • " + item["time"].slice(8, 10) + "/" + item["time"].slice(5, 7) + "/" + item["time"].slice(0, 4)}</div>
+                <div className={headerStyles.body_old}>{item["body"]}</div>
 
-              {item["quote"] != null &&
-                <div className={headerStyles.quoted_container}>
-                  <div>{item["quote_headline"]}</div>
-                  <div className={headerStyles.time_quoted}>{item["quote_time"]}</div>
-                  <div>{item["quote_body"]}</div>
-                </div>
-              }
+                {item["quote"] != null &&
+                  <div className={headerStyles.quoted_container}>
+                    <div>{item["quote_headline"]}</div>
+                    <div className={headerStyles.time_quoted}>{item["quote_time"]}</div>
+                    <div>{item["quote_body"]}</div>
+                  </div>
+                }
 
-              <hr className={headerStyles.sep}></hr>
-            </li>
-          ))}
-        </ul>
+                <hr className={headerStyles.sep}></hr>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className={headerStyles.mobile}>
+          <ul>
+            {data.slice(0, 3).map(item => (
+              <li className={headerStyles.update_container}>
+                <div className={headerStyles.headline_old}><span className={headerStyles.headerspan}>{item["headline"]}</span></div>
+                <div className={headerStyles.time_old}>{item["time"].slice(11, 16) + " • " + item["time"].slice(8, 10) + "/" + item["time"].slice(5, 7) + "/" + item["time"].slice(0, 4)}</div>
+                <div className={headerStyles.body_old}>{item["body"]}</div>
+
+                {item["quote"] != null &&
+                  <div className={headerStyles.quoted_container}>
+                    <div>{item["quote_headline"]}</div>
+                    <div className={headerStyles.time_quoted}>{item["quote_time"]}</div>
+                    <div>{item["quote_body"]}</div>
+                  </div>
+                }
+
+                <hr className={headerStyles.sep}></hr>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   )
