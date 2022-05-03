@@ -52,7 +52,7 @@ export default function Header(props) {
   }, []);
 
   // const [hideLightbox, setHideLightbox] = useState(true);
-  const [hidden, setHidden] = useState();
+  const [hidden, setHidden] = useState(true);
 
 
 
