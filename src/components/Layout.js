@@ -19,7 +19,7 @@ export default function Layout(props) {
         <meta name="description" content={description} />
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </Helmet>
-      <Header page={props.page} title={title} />
+      <Header page={props.page} title={title}/>
       <div className={layoutStyles.content}>{props.children}</div>
     </section>
   )

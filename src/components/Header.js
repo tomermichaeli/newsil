@@ -51,60 +51,90 @@ export default function Header(props) {
       });
   }, []);
 
+  // const [hideLightbox, setHideLightbox] = useState(true);
+  const [hidden, setHidden] = useState();
+
+
+
 
   //<nav className={headerStyles.header__nav, headerStyles.test1} role="navigation" aria-label="main navigation">
 
   return (
-    <div className={headerStyles.container}>
-      <nav role="navigation" aria-label="main navigation">
-        <div className={headerStyles.nav_links}>
-          <Link to="/">
-            <h1>{props.title}</h1>
-          </Link>
+    <div className={headerStyles.placeholder}>
+      <div className={headerStyles.container}>
+        <div className={headerStyles.header_row}>
+          <div className={headerStyles.header_text}>
+            <h1>
+              <Link to="/">
+                {props.title}
+              </Link>
+            </h1>
+          </div>
+          <div className={headerStyles.header_button}>
+            <button className={headerStyles.btn} onClick={() => setHidden(s => !s)}>
+              {!hidden ?
+                <b>
+                  •
+                </b>
+                :
+                <b>
+                  •
+                </b>
+              }
+            </button>
+          </div>
         </div>
-      </nav>
-      <div className={headerStyles.tweets}>
-        <div className={headerStyles.web}>
-          <ul>
-            {data.slice(0, 25).map(item => (
-              <li className={headerStyles.update_container}>
-                <div className={headerStyles.headline_old}><span className={headerStyles.headerspan}>{item["headline"]}</span></div>
-                <div className={headerStyles.time_old}>{item["time"].slice(11, 16) + " • " + item["time"].slice(8, 10) + "/" + item["time"].slice(5, 7) + "/" + item["time"].slice(0, 4)}</div>
-                <div className={headerStyles.body_old}>{item["body"]}</div>
 
-                {item["quote"] != null &&
-                  <div className={headerStyles.quoted_container}>
-                    <div>{item["quote_headline"]}</div>
-                    <div className={headerStyles.time_quoted}>{item["quote_time"]}</div>
-                    <div>{item["quote_body"]}</div>
-                  </div>
-                }
 
-                <hr className={headerStyles.sep}></hr>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className={headerStyles.mobile}>
-          <ul>
-            {data.slice(0, 3).map(item => (
-              <li className={headerStyles.update_container}>
-                <div className={headerStyles.headline_old}><span className={headerStyles.headerspan}>{item["headline"]}</span></div>
-                <div className={headerStyles.time_old}>{item["time"].slice(11, 16) + " • " + item["time"].slice(8, 10) + "/" + item["time"].slice(5, 7) + "/" + item["time"].slice(0, 4)}</div>
-                <div className={headerStyles.body_old}>{item["body"]}</div>
 
-                {item["quote"] != null &&
-                  <div className={headerStyles.quoted_container}>
-                    <div>{item["quote_headline"]}</div>
-                    <div className={headerStyles.time_quoted}>{item["quote_time"]}</div>
-                    <div>{item["quote_body"]}</div>
-                  </div>
-                }
+        <div className={headerStyles.tweets}>
+          <div className={headerStyles.web}>
+            <ul>
+              {data.slice(0, 25).map(item => (
+                <li className={headerStyles.update_container}>
+                  <div className={headerStyles.headline_old}><span className={headerStyles.headerspan}>{item["headline"]}</span></div>
+                  <div className={headerStyles.time_old}>{item["time"].slice(11, 16) + " • " + item["time"].slice(8, 10) + "/" + item["time"].slice(5, 7) + "/" + item["time"].slice(0, 4)}</div>
+                  <div className={headerStyles.body_old}>{item["body"]}</div>
 
-                <hr className={headerStyles.sep}></hr>
-              </li>
-            ))}
-          </ul>
+                  {item["quote"] != null &&
+                    <div className={headerStyles.quoted_container}>
+                      <div>{item["quote_headline"]}</div>
+                      <div className={headerStyles.time_quoted}>{item["quote_time"]}</div>
+                      <div>{item["quote_body"]}</div>
+                    </div>
+                  }
+
+                  <hr className={headerStyles.sep}></hr>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+
+          <div className={headerStyles.mobile}>
+            {!hidden ?
+              <ul>
+                {data.slice(0, 3).map(item => (
+                  <li className={headerStyles.update_container}>
+                    <div className={headerStyles.headline_old}><span className={headerStyles.headerspan}>{item["headline"]}</span></div>
+                    <div className={headerStyles.time_old}>{item["time"].slice(11, 16) + " • " + item["time"].slice(8, 10) + "/" + item["time"].slice(5, 7) + "/" + item["time"].slice(0, 4)}</div>
+                    <div className={headerStyles.body_old}>{item["body"]}</div>
+
+                    {item["quote"] != null &&
+                      <div className={headerStyles.quoted_container}>
+                        <div>{item["quote_headline"]}</div>
+                        <div className={headerStyles.time_quoted}>{item["quote_time"]}</div>
+                        <div>{item["quote_body"]}</div>
+                      </div>
+                    }
+
+                    <hr className={headerStyles.sep}></hr>
+                  </li>
+                ))}
+              </ul>
+              : null}
+
+          </div>
         </div>
       </div>
     </div>
@@ -199,7 +229,7 @@ import { isConditionalExpression } from "typescript";
 // const listelement = document.createElement('ul', {class: 'listclass'}, listitems());
 
 
-// document.getElementById("list").appendChild(listitems()); 
+// document.getElementById("list").appendChild(listitems());
 
 
 
@@ -255,13 +285,13 @@ export default function Header(props) {
           <h1>{props.title}</h1>
         </Link>
 
-        
+
 
 
         <div className={headerStyles.tweets}>
         <div id="list">
         </div>
-        
+
         </div>
       </nav>
     </header>
@@ -269,4 +299,26 @@ export default function Header(props) {
 }
 
 
+
 */
+
+
+
+//<div className={headerStyles.navbar_container}>
+  //<nav role="navigation" aria-label="main navigation">
+    //{/* <span className={headerStyles.nav_links}> */}
+  //  <h1>
+    //  <Link to="/">
+      //  {props.title}
+      //</Link>
+     // <button className={headerStyles.btn} onClick={() => setHidden(s => !s)}>
+       // {!hidden ?
+         // <b>&#128308;</b>
+       //   :
+         // <b>×</b>
+       // }
+     // </button>
+   // </h1>
+    //{/* </span> */}
+  //</nav>
+//</div>
