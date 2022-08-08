@@ -15,6 +15,15 @@
     padding-right: 1.5rem;
     padding-top: 4rem;
   }
+  .link_to_updates_div{
+    height: 2rem;
+    padding-top: 0.25rem;
+    padding-right: 1.5rem;
+    background-color: #e66c6c;
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+  }
 }
 @media (min-width: 768px) {
   .mobile{
@@ -27,6 +36,9 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 4rem;
+  }
+  .link_to_updates_div{
+    display: none;
   }
 }
 
@@ -73,14 +85,17 @@
 
 .btn {
   border: none;
-  background-color: inherit;
+  background-color: #e66c6c;
   // font-size: 16px;
   font-size: 4rem;
-  line-height: 2.5rem;
-  vertical-align: middle;
-  color: #e66c6c;
+  line-height: 1.5rem;
+  // vertical-align: middle;
+  color: #ffff;
   cursor: pointer;
-
+  
+}
+.btn h4{
+  margin-bottom: 0px !important;
 }
 
 
@@ -94,7 +109,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 0.75rem;
+  padding-top: 1.4rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }

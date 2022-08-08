@@ -73,13 +73,13 @@ export default function Header(props) {
           <div className={headerStyles.header_button}>
             <button className={headerStyles.btn} onClick={() => setHidden(s => !s)}>
               {!hidden ?
-                <b>
-                  •
-                </b>
+                <h4>
+                  מבזקים
+                </h4>
                 :
-                <b>
-                  •
-                </b>
+                <h4>
+                  מבזקים
+                </h4>
               }
             </button>
           </div>
@@ -136,6 +136,13 @@ export default function Header(props) {
 
           </div>
         </div>
+
+        <Link to="/dbindex">
+          <div className={headerStyles.link_to_updates_div}>
+            לכל העדכונים {">>"}
+          </div>
+        </Link>
+
       </div>
     </div>
   )
