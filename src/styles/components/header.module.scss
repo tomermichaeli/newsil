@@ -90,13 +90,14 @@
   font-size: 4rem;
   line-height: 1.5rem;
   // vertical-align: middle;
-  color: #ffff;
+  color: #ffff !important;
   cursor: pointer;
   // max-width: 20rem;
   
 }
-.btn h4{
+.btn p{
   margin-bottom: 0px !important;
+  color: #ffff;
 }
 .header_button{
   // margin: auto;
