@@ -70,7 +70,7 @@ export default function Header(props) {
               </Link>
             </h1>
           </div>
-          <div className={headerStyles.header_button}>
+          {/* <div className={headerStyles.header_button}>
             <button className={headerStyles.btn} onClick={() => setHidden(s => !s)}>
               {!hidden ?
                 <p>
@@ -82,7 +82,7 @@ export default function Header(props) {
                 </p>
               }
             </button>
-          </div>
+          </div> */}
         </div>
 
 
