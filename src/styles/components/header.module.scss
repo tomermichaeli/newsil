@@ -61,7 +61,7 @@
     // padding: 0.25rem 1.25rem;
     color: #e66c6c;
     // position: fixed; CONTINUE FROM HERE
-    padding-bottom: 0.5rem;
+    // padding-bottom: 0.5rem;
   }
 
   @media (min-width: 768px) {
@@ -87,15 +87,16 @@
   border: none;
   background-color: #e66c6c;
   // font-size: 16px;
-  font-size: 4rem;
+  height:1.5rem;
+  font-size: 1rem !important;
   line-height: 1.5rem;
-  // vertical-align: middle;
+  vertical-align: middle;
   color: #ffff !important;
   cursor: pointer;
   // max-width: 20rem;
   
 }
-.btn p{
+.btn {
   margin-bottom: 0px !important;
   color: #ffff;
 }
@@ -112,8 +113,9 @@
   height: 4rem;
   width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: row;
-  // justify-content: space-between;
+  justify-content: space-between;
   padding-top: 1.4rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;

@@ -85,13 +85,13 @@ export default function Header(props) {
           </div> */}
             <button className={headerStyles.btn} onClick={() => setHidden(s => !s)}>
               {!hidden ?
-                <p>
-                  הסתר מבזקים
-                </p>
+                <r>
+                  הסתר
+                </r>
                 :
-                <p>
+                <r>
                   הצג מבזקים
-                </p>
+                </r>
               }
             </button>
         </div>
