@@ -461,9 +461,12 @@ blockquote {
 blockquote p{
   text-indent: 2em;
 }
+blockquote p+p {
+  text-indent: 0em;
+} 
 blockquote:before {
   position: absolute;
-  margin-top: 0.8rem;
+  margin-top: 0.9rem;
   color: #ccc;
   // content: open-quote;
   content: "❞";
