@@ -10,7 +10,8 @@ export default function IndexPage() {
   const [data, setData] = useState([]);
   useEffect(() => {
     // fetch('http://localhost:5001')
-    fetch('https://newsilserver.herokuapp.com/all')
+    // fetch('https://newsilserver.herokuapp.com/all')
+    fetch('https://snapserver.onrender.com/all')
       .then(response => response.json())
       .then(newData => {
         setData(newData)
