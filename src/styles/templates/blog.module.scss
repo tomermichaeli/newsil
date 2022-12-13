@@ -78,6 +78,9 @@
   h4 {
     @include brand-highlight;
     padding: 0.3rem 0.5rem !important;
+    //
+    margin-top: 0.5rem;
+    //
     margin-bottom: 0.5rem;
     align-self: flex-start;
     font-weight: bold;

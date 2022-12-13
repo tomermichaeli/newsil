@@ -437,14 +437,41 @@ fieldset {
   margin-bottom: 1.45rem;
 }
 blockquote {
-  margin-left: 1.45rem;
-  margin-right: 1.45rem;
+  // margin-left: 1.45rem;
+  // margin-right: 1.45rem;
+  margin-left: 3rem;
+  margin-right: 0.5rem;
   margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  // padding-bottom: 0;
+  // padding-left: 0;
+  // padding-right: 0;
+  padding-top:0.5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.25rem;
+  // padding-top: 0;
+  // margin-bottom: 1.45rem;
+  margin-bottom: 1rem;
+  //
+  background: #f9f9f9;
+  border-right: 5px solid #ccc;
+  // margin: 1.5em 10px;
+  // padding: 0.5em 10px;
+}
+blockquote p{
+  text-indent: 2em;
+}
+blockquote:before {
+  position: absolute;
+  margin-top: 0.8rem;
+  color: #ccc;
+  // content: open-quote;
+  content: "❞";
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0em;
+  vertical-align: -0.4em;
+  quotes: "\201C""\201D""\2018""\2019";
 }
 form {
   margin-left: 0;
