@@ -172,6 +172,12 @@
 .update_container {
   // margin-bottom: 1rem;
 }
+.update_container:hover {
+  cursor: default;
+  .time_old{
+    color: #6d6d6d;
+  }
+}
 hr.sep {
   // width: 25%;
   margin-left: auto;
