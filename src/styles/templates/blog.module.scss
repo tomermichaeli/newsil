@@ -87,9 +87,16 @@
   }
 
   h6{
+    //for image descriptions
     padding-top: 0rem !important;
-    // color: #e66c6c;
-    @include brand-highlight;
+    padding-bottom: 0rem !important;
+    padding-right: 0.25rem !important;
+    color: #e66c6c;
+    font-weight: 500;
+  }
+  h6:hover{
+    color: #cf3b3b;
+    cursor: default;
   }
 
   p {
@@ -145,8 +152,10 @@
     }
 
     span {
+      //this is for images
       width: 100%;
-      margin: 1rem auto;
+      // margin: 1rem auto;
+      margin: 1rem 1rem 0rem;
     }
 
     ul,
