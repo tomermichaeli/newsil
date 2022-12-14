@@ -86,6 +86,12 @@
     font-weight: bold;
   }
 
+  h6{
+    padding-top: 0rem !important;
+    // color: #e66c6c;
+    @include brand-highlight;
+  }
+
   p {
     color: #464646;
     font-weight: normal;
