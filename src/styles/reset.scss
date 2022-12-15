@@ -439,7 +439,7 @@ fieldset {
 blockquote {
   // margin-left: 1.45rem;
   // margin-right: 1.45rem;
-  margin-left: 3rem;
+  // margin-left: 3rem;
   margin-right: 0.5rem;
   margin-top: 0;
   // padding-bottom: 0;
@@ -463,6 +463,10 @@ blockquote p{
 }
 blockquote p+p {
   text-indent: 0em;
+}
+blockquote strong{
+  // text-decoration: underline;
+  // text-decoration: underline #e66c6c;
 } 
 blockquote:before {
   position: absolute;

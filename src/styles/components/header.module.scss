@@ -197,6 +197,19 @@ hr.sep {
   padding-right: 0.75rem;
   border-color: #be3e3e;
   border-right-style: solid;
+
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+}
+.quoted_container:hover {
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+  -webkit-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  border-right-color: #e66c6c;
+
 }
 .time_quoted {
   direction: rtl;
@@ -207,6 +220,12 @@ hr.sep {
   outline: none;
   color: #919191;
   font-weight: 450;
+}
+.quoted_headline{
+  // font-weight: 500;
+}
+.quoted_body{
+  font-weight: 300;
 }
 
 //

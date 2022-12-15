@@ -110,9 +110,9 @@ export default function Header(props) {
 
                   {item["quote"] != null &&
                     <div className={headerStyles.quoted_container}>
-                      <div>{item["quote_headline"]}</div>
+                      <div className={headerStyles.quoted_headline}>{item["quote_headline"]}</div>
                       <div className={headerStyles.time_quoted}>{item["quote_time"]}</div>
-                      <div>{item["quote_body"]}</div>
+                      <div className={headerStyles.quoted_body}>{item["quote_body"]}</div>
                     </div>
                   }
 
