@@ -62,11 +62,11 @@ fields:
   label: hero image
   description: Enter hero image for blog post here
   default: "/content/images/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg"
-- name: head_image_description
+- name: hero_image_description
   type: text
   config:
     required: false
-  label: head image description
+  label: hero image description
   description: Description and/or credit for main image
 pages:
 - content/posts/1.md
