@@ -15,6 +15,7 @@ export default function useLatestArticles() {
               gatsbyImageData(width: 300, placeholder: DOMINANT_COLOR)
             }
           }
+          hero_image_description
         }
         excerpt(pruneLength: 200, truncate: true)
         fields {

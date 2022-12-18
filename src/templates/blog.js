@@ -24,6 +24,7 @@ export default function Blog(props) {
           <GatsbyImage
             image={data.frontmatter.hero_image.childImageSharp.gatsbyImageData}
             alt={data.frontmatter.title} />
+            <span className={blogTemplateStyles.hero_image_description}>{data.frontmatter.hero_image_description}</span>
         </figure>
         }
         <div className={blogTemplateStyles.blog__info}>
@@ -63,6 +64,7 @@ export const getPostData = graphql`query ($slug: String!) {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
+      hero_image_description
     }
     html
   }
@@ -81,6 +83,7 @@ export const getPostData = graphql`query ($slug: String!) {
               gatsbyImageData(width: 300, placeholder: DOMINANT_COLOR)
             }
           }
+          hero_image_description
         }
         excerpt(pruneLength: 200, truncate: true)
         fields {

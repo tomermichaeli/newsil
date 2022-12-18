@@ -12,6 +12,7 @@ export default function useBlogData() {
           title
           topic
           article_title
+          hero_image_description
           hero_image {
             childImageSharp {
               gatsbyImageData(width: 900, placeholder: BLURRED)

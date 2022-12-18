@@ -21,10 +21,22 @@
   height: 30vh;
   width: 100%;
   margin: 0;
+  position: relative;
 
   img {
     margin-bottom: 0;
     object-fit: cover;
+  }
+  .hero_image_description{
+    @include brand-highlight;
+    font-size: smaller;
+    // font-weight: lighter;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+  }
+  .hero_image_description:hover{
+    cursor: default;
   }
 }
 
