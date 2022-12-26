@@ -14,7 +14,7 @@ export default function Blog(props) {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="חדשות ישראל" />
         <meta name="twitter:description" content="כל החדשות באתר חדשות ישראל" />
-        <meta name="twitter:image" content="imgdefault.png" />
+        <meta name="twitter:image" content={data.frontmatter.hero_image} />
       </head>
       <article className={blogTemplateStyles.blog}>
         <Link to="/" className={blogTemplateStyles.back}>
