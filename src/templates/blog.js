@@ -10,6 +10,11 @@ export default function Blog(props) {
 
   return (
     <Layout>
+      <head>
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="חדשות ישראל" />
+        <meta name="twitter:description" content="כל החדשות באתר חדשות ישראל" />
+      </head>
       <article className={blogTemplateStyles.blog}>
         <Link to="/" className={blogTemplateStyles.back}>
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 26 26"
