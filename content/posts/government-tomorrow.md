@@ -58,3 +58,9 @@ hero_image_description: ''
 ![](/content/images/photo_2022-12-28-15-24-16.jpeg)
 
 ###### נתניהו וכץ
+
+**יואב קיש** יהיה שר החינוך והשר המקשר בין הממשלה לכנסת
+
+![](/content/images/img_54953da76ca6-1.jpeg)
+
+###### נתניהו וקיש
