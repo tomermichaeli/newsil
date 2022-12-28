@@ -87,7 +87,7 @@ hero_image_description: ''
 
 **שלמה קרעי** ימונה לשר התקשורת. קרעי הביע תמיכה בסגירת תאגיד השידור הציבורי.
 
-![](/content/images/img_6841.JPG)
+![](/content/images/aijhd-yk9yx.jpeg)
 
 ###### חוזרת לתחבורה. רגב ונתניהו
 
