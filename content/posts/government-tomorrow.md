@@ -27,7 +27,7 @@ hero_image_description: ''
 
 אתמול כבר הודיע ח״כ דודי אמסלם כי בפגישתו עם נתניהו הוא התבשר שלא ימונה לשר המשפטים או ליו״ר הכנסת, ועל כן לא יקבל תפקיד בממשלה ויכהן כחבר כנסת בלבד - כפי שהתחייב. אמסלם הוסיף בציוץ שפרסם כי ״זה לצערי המחיר שמשלמים על נאמנות ועמידה בעקרונות״.
 
-<blockquote class="twitter-tweet" data-lang="he"><p lang="iw" dir="rtl">יצאתי כעת מפגישה עם בנימין נתניהו שבה הבהיר לי שלא אכהן כשר המשפטים ולא כיו&quot;ר הכנסת.<br>אהיה בסוף ח&quot;כ מן המניין-<br>כפי שהתחייבתי מראש.<br>זה לצערי המחיר שמשלמים על נאמנות ועמידה בעקרונות.<br><br>אשרת את מצביעי הליכוד ותושבי ישראל מהכנסת-<br>במסירות, נאמנות ובאהבה, כהרגלי בקודש.<br>אוהב אתכם 💙🇮🇱 <a href="https://t.co/zNwQJtt4ck">pic.twitter.com/zNwQJtt4ck</a></p>&mdash; דודי אמסלם 🇮🇱 (@dudiamsalem) <a href="https://twitter.com/dudiamsalem/status/1607796713250586624?ref_src=twsrc%5Etfw">27 בדצמבר 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="he"><p lang="iw" dir="rtl">יצאתי כעת מפגישה עם בנימין נתניהו שבה הבהיר לי שלא אכהן כשר המשפטים ולא כיו"ר הכנסת.<br>אהיה בסוף ח"כ מן המניין-<br>כפי שהתחייבתי מראש.<br>זה לצערי המחיר שמשלמים על נאמנות ועמידה בעקרונות.<br><br>אשרת את מצביעי הליכוד ותושבי ישראל מהכנסת-<br>במסירות, נאמנות ובאהבה, כהרגלי בקודש.<br>אוהב אתכם 💙🇮🇱 <a href="https://t.co/zNwQJtt4ck">pic.twitter.com/zNwQJtt4ck</a></p>— דודי אמסלם 🇮🇱 (@dudiamsalem) <a href="https://twitter.com/dudiamsalem/status/1607796713250586624?ref_src=twsrc%5Etfw">27 בדצמבר 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ###### הציוץ של אמסלם
 
@@ -49,7 +49,7 @@ hero_image_description: ''
 
 **יואב גלנט** יהיה שר הביטחון. זאת לאחר שב-2011 בוטל מינויו לתפקיד הרמטכ״ל בעקבות חשדות לעבירות בנייה. זמן קצר לאחר ההודעה על המינוי צייץ שר הביטחון הנוכחי, בני גנץ, איחולי הצלחה לגלנט.
 
-<blockquote class="twitter-tweet" data-lang="he"><p lang="iw" dir="rtl">יואב, בהצלחה רבה בשמירה על ביטחון ישראל.<a href="https://twitter.com/yoavgallant?ref_src=twsrc%5Etfw">@yoavgallant</a></p>&mdash; בני גנץ - Benny Gantz (@gantzbe) <a href="https://twitter.com/gantzbe/status/1608080796073467906?ref_src=twsrc%5Etfw">28 בדצמבר 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="he"><p lang="iw" dir="rtl">יואב, בהצלחה רבה בשמירה על ביטחון ישראל.<a href="https://twitter.com/yoavgallant?ref_src=twsrc%5Etfw">@yoavgallant</a></p>— בני גנץ - Benny Gantz (@gantzbe) <a href="https://twitter.com/gantzbe/status/1608080796073467906?ref_src=twsrc%5Etfw">28 בדצמבר 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ###### מאחל הצלחה. הציוץ של שר הביטחון היוצא גנץ
 
@@ -73,7 +73,7 @@ hero_image_description: ''
 
 ![](/content/images/img_1ec19e54bdbf-1.jpeg)
 
-###### המינוי הצפוי. נתניהו ולוין
+###### המינוי הצפוי. לוין ונתניהו
 
 לתפקיד שר החקלאות נתניהו החליט למנות את **אבי דיכטר**, שכיהן בעבר כשר לביטחון הפנים, סגן שר הביטחון ויו״ר ועדת חוץ וביטחון.
 
@@ -86,6 +86,16 @@ hero_image_description: ''
 ###### נתניהו וקרעי
 
 **שלמה קרעי** ימונה לשר התקשורת. קרעי הביע תמיכה בסגירת תאגיד השידור הציבורי.
+
+![](/content/images/img_6841.JPG)
+
+###### חוזרת לתחבורה. רגב ונתניהו
+
+מעט לפני 21:00 עדכן נתניהו בשני מינויים נוספים: מירי רגב תשוב למשרד התחבורה, ואופיר אקוניס יכהן כשר המדע והטכנולוגיה.
+
+![](/content/images/img_6842.JPG)
+
+###### נתניהו ואקוניס
 
 #### החקיקה הושלמה
 
