@@ -1,5 +1,5 @@
 ---
-topic: חדשות
+topic: פוליטיקה
 date: 2022-12-28T12:39:39.000+00:00
 hero_image: "/content/images/imgdefault.png"
 title: government tomorrow
