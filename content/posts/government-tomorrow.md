@@ -39,8 +39,18 @@ hero_image_description: ''
 
 **אופיר כץ** יהיה יו״ר הקואליציה ויו״ר סיעת הליכוד.
 
+![](/content/images/fletgobwyaiwinj.jpeg)
+
+###### שר הביטחון הבא. נתניהו וגלנט
+
 **יואב גלנט** יהיה שר הביטחון. זמן קצר לאחר ההודעה על המינוי צייץ שר הביטחון הנוכחי, בני גנץ, איחולי הצלחה לגלנט.
 
 <blockquote class="twitter-tweet" data-lang="he"><p lang="iw" dir="rtl">יואב, בהצלחה רבה בשמירה על ביטחון ישראל.<a href="https://twitter.com/yoavgallant?ref_src=twsrc%5Etfw">@yoavgallant</a></p>&mdash; בני גנץ - Benny Gantz (@gantzbe) <a href="https://twitter.com/gantzbe/status/1608080796073467906?ref_src=twsrc%5Etfw">28 בדצמבר 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ###### מאחל הצלחה. הציוץ של שר הביטחון היוצא גנץ
+
+**חיים כץ** יהיה שר התיירות.
+
+![](/content/images/photo_2022-12-28-15-24-16.jpeg)
+
+###### נתניהו וכץ
