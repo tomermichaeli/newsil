@@ -27,7 +27,7 @@ hero_image_description: ''
 
 אתמול כבר הודיע ח״כ דודי אמסלם כי בפגישתו עם נתניהו הוא התבשר שלא ימונה לשר המשפטים או ליו״ר הכנסת, ועל כן לא יקבל תפקיד בממשלה ויכהן כחבר כנסת בלבד - כפי שהתחייב. אמסלם הוסיף בציוץ שפרסם כי ״זה לצערי המחיר שמשלמים על נאמנות ועמידה בעקרונות״.
 
-<blockquote class="twitter-tweet"><p lang="iw" dir="rtl">יצאתי כעת מפגישה עם בנימין נתניהו שבה הבהיר לי שלא אכהן כשר המשפטים ולא כיו&quot;ר הכנסת.<br>אהיה בסוף ח&quot;כ מן המניין-<br>כפי שהתחייבתי מראש.<br>זה לצערי המחיר שמשלמים על נאמנות ועמידה בעקרונות.<br><br>אשרת את מצביעי הליכוד ותושבי ישראל מהכנסת-<br>במסירות, נאמנות ובאהבה, כהרגלי בקודש.<br>אוהב אתכם 💙🇮🇱 &mdash; דודי אמסלם 🇮🇱 (@dudiamsalem) <a href="https://twitter.com/dudiamsalem/status/1607796713250586624?ref_src=twsrc%5Etfw">December 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="he"><p lang="iw" dir="rtl">יצאתי כעת מפגישה עם בנימין נתניהו שבה הבהיר לי שלא אכהן כשר המשפטים ולא כיו&quot;ר הכנסת.<br>אהיה בסוף ח&quot;כ מן המניין-<br>כפי שהתחייבתי מראש.<br>זה לצערי המחיר שמשלמים על נאמנות ועמידה בעקרונות.<br><br>אשרת את מצביעי הליכוד ותושבי ישראל מהכנסת-<br>במסירות, נאמנות ובאהבה, כהרגלי בקודש.<br>אוהב אתכם 💙🇮🇱 <a href="https://t.co/zNwQJtt4ck">pic.twitter.com/zNwQJtt4ck</a></p>&mdash; דודי אמסלם 🇮🇱 (@dudiamsalem) <a href="https://twitter.com/dudiamsalem/status/1607796713250586624?ref_src=twsrc%5Etfw">27 בדצמבר 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 עוד נודע אתמול שחבר הכנסת לשעבר צחי הנגבי, שלא נבחר לכנסת בבחירות האחרונות, ימונה לראש המל״ל.
 
