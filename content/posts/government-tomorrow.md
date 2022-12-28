@@ -29,10 +29,18 @@ hero_image_description: ''
 
 <blockquote class="twitter-tweet" data-lang="he"><p lang="iw" dir="rtl">יצאתי כעת מפגישה עם בנימין נתניהו שבה הבהיר לי שלא אכהן כשר המשפטים ולא כיו&quot;ר הכנסת.<br>אהיה בסוף ח&quot;כ מן המניין-<br>כפי שהתחייבתי מראש.<br>זה לצערי המחיר שמשלמים על נאמנות ועמידה בעקרונות.<br><br>אשרת את מצביעי הליכוד ותושבי ישראל מהכנסת-<br>במסירות, נאמנות ובאהבה, כהרגלי בקודש.<br>אוהב אתכם 💙🇮🇱 <a href="https://t.co/zNwQJtt4ck">pic.twitter.com/zNwQJtt4ck</a></p>&mdash; דודי אמסלם 🇮🇱 (@dudiamsalem) <a href="https://twitter.com/dudiamsalem/status/1607796713250586624?ref_src=twsrc%5Etfw">27 בדצמבר 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+###### הציוץ של אמסלם
+
 עוד נודע אתמול שחבר הכנסת לשעבר צחי הנגבי, שלא נבחר לכנסת בבחירות האחרונות, ימונה לראש המל״ל.
 
 **היום נתניהו החל להודיע על תפקידיהם של יתר חברי הליכוד.**
 
-* **אמיר אוחנה** נבחר פה אחד בסיעה כמועמד הליכוד ליו״ר הכנסת, והוא צפוי להיבחר לתפקיד מחר בישיבת המליאה.
-* **אופיר כץ** יהיה יו״ר הקואליציה ויו״ר סיעת הליכוד.
-* 
+**אמיר אוחנה** נבחר פה אחד בסיעה כמועמד הליכוד ליו״ר הכנסת, והוא צפוי להיבחר לתפקיד מחר בישיבת המליאה.
+
+**אופיר כץ** יהיה יו״ר הקואליציה ויו״ר סיעת הליכוד.
+
+**יואב גלנט** יהיה שר הביטחון. זמן קצר לאחר ההכרזה, צייץ שר הביטחון הנוכחי, בני גנץ, איחולי הצלחה לגלנט.
+
+<blockquote class="twitter-tweet" data-lang="he"><p lang="iw" dir="rtl">יואב, בהצלחה רבה בשמירה על ביטחון ישראל.<a href="https://twitter.com/yoavgallant?ref_src=twsrc%5Etfw">@yoavgallant</a></p>&mdash; בני גנץ - Benny Gantz (@gantzbe) <a href="https://twitter.com/gantzbe/status/1608080796073467906?ref_src=twsrc%5Etfw">28 בדצמבר 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+###### מאחל הצלחה. הציוץ של שר הביטחון היוצא גנץ
