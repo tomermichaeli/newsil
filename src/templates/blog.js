@@ -16,8 +16,9 @@ export default function Blog(props) {
         <meta name="twitter:site" content="@thenewsil" />
         
         <meta name="twitter:title" content={"חדשות ישראל | " + data.frontmatter.topic + " | " + data.frontmatter.article_title} />
-        <meta name="twitter:image" content="https://i.ibb.co/TvXcT96/imgdefault.png" />
-      </head>
+        {/* <meta name="twitter:image" content="https://i.ibb.co/TvXcT96/imgdefault.png" /> */}
+        <meta name="twitter:image" content={data.frontmatter.hero_image} />
+        </head>
       <article className={blogTemplateStyles.blog}>
         <Link to="/" className={blogTemplateStyles.back}>
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 26 26"
