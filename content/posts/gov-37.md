@@ -12,7 +12,7 @@ hero_image_description: 'נתניהו בכנסת | צילום: דוברות הכ
 
 **לצפייה בשידור החי:**
 
-<blockquote class="twitter-tweet" data-lang="he"><p lang="iw" dir="rtl">לקראת השבעת הממשלה ה-37: שידור חי מהכנסת<a href="https://t.co/HOh89NvSvI">https://t.co/HOh89NvSvI</a></p>&mdash; חדשות ישראל (@thenewsil) <a href="https://twitter.com/thenewsil/status/1608387965365129216?ref_src=twsrc%5Etfw">29 בדצמבר 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="he"><p lang="iw" dir="rtl">לקראת השבעת הממשלה ה-37: שידור חי מהכנסת<a href="https://t.co/HOh89NvSvI">https://t.co/HOh89NvSvI</a></p>— חדשות ישראל (@thenewsil) <a href="https://twitter.com/thenewsil/status/1608387965365129216?ref_src=twsrc%5Etfw">29 בדצמבר 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## חברי ממשלת ישראל ה-37, לפי סדר השבעתם:
 
@@ -56,7 +56,7 @@ hero_image_description: 'נתניהו בכנסת | צילום: דוברות הכ
 
 שר החקלאות (הליכוד)
 
-גלית דיסטל אטבריאן
+#### גלית דיסטל אטבריאן
 
 **שרה במשרד ראש הממשלה** (הליכוד)
 
