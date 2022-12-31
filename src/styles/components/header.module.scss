@@ -24,6 +24,9 @@
     color: white;
     font-weight: bold;
   }
+  .clock{
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .mobile{
@@ -480,3 +483,13 @@ hr.sep {
 // //     opacity: 1;
 // //   }
 // // }
+
+.clock{
+  position: fixed;
+  top:1.65em;
+  left:2em;
+  background-color: #dadada;
+  z-index: 2;
+  width:6em;
+  height:2rem;
+}
