@@ -87,6 +87,10 @@
     line-height: 1.2;
   }
 
+  h2 {
+    padding: 0.5rem 0rem !important;
+  }
+
   h4 {
     @include brand-highlight;
     padding: 0.3rem 0.5rem !important;
@@ -118,7 +122,23 @@
 
   ul {
     list-style: initial;
+    // list-style: none;
     font-size: 1.15rem;
+  }
+
+  /////// custom bullets
+  // ul li::before { 
+  //   content: "\2022";
+  //   color: #464646;
+  //   font-weight: bold; /* If you want it to be bold */
+  //   display: inline-block; /* Needed to add space between the bullet and the text */ 
+  //   width: 1em; /* Also needed for space (tweak if needed) */
+  //   margin-left: 1em;
+  //   margin-right: 0;
+  // }
+
+  li{
+    color: #464646;
   }
 
   ul,
